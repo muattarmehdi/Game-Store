@@ -36,6 +36,9 @@ const GenreList = ({ onSelectGenre, selectedGenre }: Props) => {
               variant="ghost"
               onClick={() => onSelectGenre(genre)}
               fontWeight={genre.id === selectedGenre?.id ? "bold" : "normal"}
+              fontFamily={
+                genre.id === selectedGenre?.id ? "mono" : "sans-serif"
+              }
             >
               {genre.name}
             </Button>{" "}
